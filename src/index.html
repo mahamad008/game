@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="header flex items-center justify-around p-4">
+      <button class="bg-blue-500 p-4 rounded text-white again">Again</button>
+      <div>Choose between 1 and 20</div>
+    </div>
+
+    <div class="section text-center">
+      <h1 class="text-6xl font-bold">Guess my number</h1>
+      <div class="random p-4">
+        <div
+          class="number text-6xl font-bold bg-black text-white m-4 p-3 inline-block"
+        >
+          ?
+        </div>
+      </div>
+    </div>
+
+    <form>
+      <div class="section flex justify-center items-center">
+        <input
+          type="number"
+          class="input border p-4 m-4 text-2xl"
+          placeholder="Enter your guess"
+        />
+        <button class="bg-blue-500 p-4 rounded text-white">Check</button>
+      </div>
+    </form>
+
+    <div class="status text-center">
+      <h1 class="statusValue"></h1>
+    </div>
+  </body>
+</html>
